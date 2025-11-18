@@ -1,0 +1,29 @@
+name: CI
+
+on: 
+  push: # La integración continua estará disponible solo al hacer push y pull request a la rama main
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest #Lo corremos en ubuntu ya que es un estándar y es rápido
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4 #Descargamos el código
+
+    - name: Install Node.js
+      uses: actions/setup-node@v4 #Definimos la versión de node
+      with:
+        node-version: "20"
+
+    - name: Install dependencies
+      run: npm install # Verificamos que se instalen las dependencias
+
+    - name: Run ESLint
+      run: npm run lint # Validamos la calidad del código
+
+    - name: Build project
+      run: npm run build # Verificamos que compile sin errores
