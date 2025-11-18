@@ -1,42 +1,45 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Paletas */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary: #4a90e2;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.dark {
+    --bg-color: #0f0f0f;
+    --text-color: #ffffff;
+    --primary: #7ab0ff;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Estilos base aplicados al body */
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: system-ui, sans-serif;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Contenedor simple */
+.container {
+    padding: 2rem;
 }
 
-.card {
-  padding: 2em;
+/* Botón de cambio de tema */
+.theme-toggle {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: var(--primary);
+    color: var(--bg-color);
+    transition: background 0.3s ease, transform 0.1s ease;
 }
 
-.read-the-docs {
-  color: #888;
+.theme-toggle:hover {
+    transform: scale(1.03);
+}
+
+.theme-toggle:active {
+    transform: scale(0.97);
 }
