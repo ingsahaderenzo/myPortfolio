@@ -3,10 +3,8 @@ import styles from "./Navbar.module.css";
 
 export default function Navbar({
     onToggleTheme,
-    theme,
 }: {
     onToggleTheme: () => void;
-    theme: string;
 }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 

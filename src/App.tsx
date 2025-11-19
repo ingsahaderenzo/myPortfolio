@@ -20,7 +20,6 @@ function App() {
                 onToggleTheme={() =>
                     setTheme(theme === "light" ? "dark" : "light")
                 }
-                theme={theme}
             />
         </div>
     );
