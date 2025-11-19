@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
+import type { Language } from "./i18n/translations";
 
 function App() {
     const [theme, setTheme] = useState("light");
+    const [language, setLanguage] = useState<Language>("en");
 
-    // Cambia la clase en <html>
     useEffect(() => {
         if (theme === "dark") {
             document.documentElement.classList.add("dark");
@@ -20,6 +21,8 @@ function App() {
                 onToggleTheme={() =>
                     setTheme(theme === "light" ? "dark" : "light")
                 }
+                language={language}
+                onChangeLanguage={setLanguage}
             />
         </div>
     );
