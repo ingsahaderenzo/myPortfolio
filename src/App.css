@@ -1,45 +1,30 @@
-/* Paletas */
+/* Paletes */
 :root {
-    --bg-color: #ffffff;
+    --bg-color: #fdf0eb;
     --text-color: #000000;
-    --primary: #4a90e2;
+    --primary: #76b402;
 }
 
 .dark {
     --bg-color: #0f0f0f;
     --text-color: #ffffff;
-    --primary: #7ab0ff;
+    --primary: #517fff;
 }
 
-/* Estilos base aplicados al body */
 body {
     background: var(--bg-color);
     color: var(--text-color);
     font-family: system-ui, sans-serif;
     transition: background 0.3s ease, color 0.3s ease;
+    margin: 0;
+    overflow-x: hidden;
 }
 
-/* Contenedor simple */
 .container {
+    width: 100%;
     padding: 2rem;
-}
-
-/* Botón de cambio de tema */
-.theme-toggle {
-    padding: 0.7rem 1.2rem;
-    font-size: 1rem;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    background: var(--primary);
-    color: var(--bg-color);
-    transition: background 0.3s ease, transform 0.1s ease;
-}
-
-.theme-toggle:hover {
-    transform: scale(1.03);
-}
-
-.theme-toggle:active {
-    transform: scale(0.97);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
 }

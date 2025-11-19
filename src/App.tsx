@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
     const [theme, setTheme] = useState("light");
@@ -15,14 +16,12 @@ function App() {
 
     return (
         <div className="container">
-            <h1>Mi Portfolio</h1>
-
-            <button
-                className="theme-toggle"
-                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-            >
-                {theme === "light" ? "🌙 Modo oscuro" : "☀️ Modo claro"}
-            </button>
+            <Navbar
+                onToggleTheme={() =>
+                    setTheme(theme === "light" ? "dark" : "light")
+                }
+                theme={theme}
+            />
         </div>
     );
 }
