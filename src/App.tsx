@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import type { Language } from "./i18n/translations";
+import Hero from "./components/hero/Hero";
 
 function App() {
     const [theme, setTheme] = useState("light");
@@ -24,6 +25,7 @@ function App() {
                 language={language}
                 onChangeLanguage={setLanguage}
             />
+            <Hero language={language} />
         </div>
     );
 }

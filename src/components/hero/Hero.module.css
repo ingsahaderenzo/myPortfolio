@@ -1,0 +1,62 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.textBlock {
+    max-width: 700px;
+}
+
+.title {
+    margin-top: -10rem;
+    font-size: 8rem;
+    font-weight: 700;
+    color: var(--text-color);
+    max-width: 600px;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.subtitle {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: var(--text-secondary);
+}
+
+.welcome {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.photoWrapper {
+    width: 23rem;
+    border-radius: 45%;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 769px) {
+    .title {
+        margin-top: 3rem;
+        font-size: 6rem;
+        text-align: center;
+    }
+
+    .subtitle {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}

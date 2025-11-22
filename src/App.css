@@ -1,14 +1,14 @@
 /* Paletes */
 :root {
-    --bg-color: #fdf0eb;
-    --text-color: #000000;
-    --primary: #76b402;
+    --bg-color: #fff7f3;
+    --text-color: #363636;
+    --primary: #89d300;
     --border: rgba(0, 0, 0, 0.5);
 }
 
 .dark {
     --bg-color: #0f0f0f;
-    --text-color: #ffffff;
+    --text-color: #d4d4d4;
     --primary: #517fff;
     --border: rgba(255, 255, 255, 0.5);
 }
@@ -30,7 +30,7 @@ body {
     min-height: 100vh;
     background: var(--bg-color);
     color: var(--text-color);
-    font-family: system-ui, sans-serif;
+    font-family: "Inter", sans-serif;
     transition: background 0.3s ease, color 0.3s ease;
     margin: 0;
     padding: 0;
