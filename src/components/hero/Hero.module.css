@@ -36,8 +36,8 @@
 }
 
 .photoWrapper {
-    width: 23rem;
-    border-radius: 45%;
+    width: 24rem;
+    border-radius: 15%;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -46,6 +46,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 @media (max-width: 769px) {

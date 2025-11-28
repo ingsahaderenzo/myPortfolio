@@ -16,7 +16,7 @@ export const translations = {
     },
     es: {
         nav: {
-            about: "Acerca",
+            about: "Acerca de",
             experience: "Experiencia",
             skills: "Habilidades",
             contact: "Contacto",
