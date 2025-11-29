@@ -55,6 +55,15 @@
     background-color: var(--bg-color);
     border: 1.5px solid var(--border);
     border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(27, 27, 27, 0.164);
+    transition: 0.5s ease;
+}
+
+.metricBox:hover {
+    scale: 1.05;
+    border-color: var(--primary--on--secondary--bg);
+    box-shadow: 0 8px 12px rgba(27, 27, 27, 0.3);
+    transition: 0.5s ease;
 }
 
 .metricTitle {
