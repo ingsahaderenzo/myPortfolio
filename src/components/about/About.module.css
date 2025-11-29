@@ -1,0 +1,94 @@
+.section {
+    width: 100%;
+    background-color: var(--bg--secondary);
+    padding: 3rem;
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+}
+
+.sectionTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary--on--secondary--bg);
+    border-bottom: 0.3rem solid var(--primary--on--secondary--bg);
+}
+
+.sectionContent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.principalText {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    width: 50%;
+    white-space: pre-line;
+}
+
+.metricsContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.metricBox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 20rem;
+    height: 10rem;
+    padding: 0.8rem;
+    background-color: var(--bg-color);
+    border: 1.5px solid var(--border);
+    border-radius: 20px;
+}
+
+.metricTitle {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: var(--primary--on--secondary--bg);
+    margin-bottom: 0.2rem;
+}
+
+.secondaryText {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .section {
+        margin-top: 3rem;
+    }
+    .sectionContent {
+        flex-direction: column;
+        align-items: center;
+    }
+    .principalText {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .metricsContainer {
+        width: 100%;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .metricBox {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import type { Language } from "./i18n/translations";
 import Hero from "./components/hero/Hero";
+import About from "./components/about/About";
 
 function App() {
     const [theme, setTheme] = useState("light");
@@ -26,6 +27,7 @@ function App() {
                 onChangeLanguage={setLanguage}
             />
             <Hero language={language} />
+            <About language={language} />
         </div>
     );
 }
