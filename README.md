@@ -1,73 +1,92 @@
-# React + TypeScript + Vite
+# 🌐 Portfolio Personal – Renzo Sahade
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es mi portfolio personal, desarrollado con **React**, **TypeScript** y **Vite**, donde presento mis proyectos, experiencia laboral y habilidades como desarrollador full-stack.
 
-Currently, two official plugins are available:
+El objetivo principal es mostrar mi trabajo de forma clara, rápida y visualmente atractiva, con un diseño moderno y optimizado para cualquier dispositivo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+** Español | English**  
+*(Scroll down for English version)*
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tecnologías Utilizadas
 
-## Expanding the ESLint configuration
+- React + TypeScript  
+- Vite  
+- CSS Modules  
+- React Router  
+- ESLint  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🌍 Multi-idioma
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+El sitio está disponible en **español** e **inglés**, utilizando un sistema de traducciones propio basado en objetos tipados.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎨 Características
+- Diseño moderno, limpio y responsive
+- Modo claro/oscuro
+- Secciones: About, Skills, Experience, Projects, Contact
+- Animaciones suaves
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📄 Licencia
+Este proyecto es personal, pero podés usarlo como referencia si estás construyendo tu portfolio.
+
+---
+
+## 📬 Contacto
+
+Email: ing.sahade.renzo@gmail.com
+
+LinkedIn: [https://linkedin.com/in/renzosahade](https://www.linkedin.com/in/renzo-sahade-020608318/)
+
+---
+
+# 🌐 Personal Portfolio – Renzo Sahade
+
+This is my personal portfolio, built with **React**, **TypeScript**, and **Vite**, showcasing my professional experience, projects, and technical skills as a full-stack developer.
+
+The main goal of this website is to present my work clearly, quickly, and with a modern and responsive design.
+
+---
+
+## 🚀 Technologies Used
+
+- React + TypeScript  
+- Vite  
+- CSS Modules  
+- React Router  
+- ESLint  
+
+---
+
+## 🌍 Multi-language Support
+
+The website supports **English** and **Spanish**, using a custom translation system based on typed objects.
+
+---
+
+## 🎨 Features
+
+- Modern, clean and responsive UI
+- Light/dark mode
+- Sections: About, Skills, Experience, Projects, Contact
+- Smooth animations
+
+---
+
+## 📄 License
+
+This is a personal project, but feel free to use it as inspiration for your own portfolio.
+
+---
+
+## 📬 Contact
+
+Email: ing.sahade.renzo@gmail.com
+
+LinkedIn: [https://linkedin.com/in/renzosahade](https://www.linkedin.com/in/renzo-sahade-020608318/)
