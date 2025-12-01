@@ -44,16 +44,24 @@ export default function Navbar({
             {/* Desktop menu */}
             <ul className={styles.center}>
                 <li>
-                    <a href="#about">{t.about}</a>
+                    <a href="#about" className={styles.navLink}>
+                        {t.about}
+                    </a>
                 </li>
                 <li>
-                    <a href="#experience">{t.experience}</a>
+                    <a href="#experience" className={styles.navLink}>
+                        {t.experience}
+                    </a>
                 </li>
                 <li>
-                    <a href="#skills">{t.skills}</a>
+                    <a href="#skills" className={styles.navLink}>
+                        {t.skills}
+                    </a>
                 </li>
                 <li>
-                    <a href="#contact">{t.contact}</a>
+                    <a href="#contact" className={styles.navLink}>
+                        {t.contact}
+                    </a>
                 </li>
             </ul>
 

@@ -4,6 +4,7 @@ import Navbar from "./components/navbar/Navbar";
 import type { Language } from "./i18n/translations";
 import Hero from "./components/hero/Hero";
 import About from "./components/about/About";
+import Experience from "./components/experience/Experience";
 
 function App() {
     const [theme, setTheme] = useState("light");
@@ -28,6 +29,7 @@ function App() {
             />
             <Hero language={language} />
             <About language={language} />
+            <Experience language={language} />
         </div>
     );
 }

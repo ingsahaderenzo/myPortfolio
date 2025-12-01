@@ -102,6 +102,20 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.navLink {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+    white-space: nowrap;
+}
+
+.navLink:hover {
+    opacity: 1;
+}
+
 :global(.dark) .toggleThumb {
     transform: translateX(28px);
 }

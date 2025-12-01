@@ -1,0 +1,92 @@
+.section {
+    width: 100%;
+    background-color: var(--bg-color);
+    padding: 3rem;
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+}
+
+.sectionTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary--on--secondary--bg);
+    border-bottom: 0.3rem solid var(--primary--on--secondary--bg);
+}
+
+.experienceBox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    border: 2px solid var(--primary);
+    border-radius: 14px;
+    padding: 2rem;
+    width: 90%;
+    align-self: center;
+    transition: all 0.3s ease;
+}
+
+.experienceBox:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.experienceHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.experienceTitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary--on--secondary--bg);
+}
+
+.experienceTime {
+    font-style: italic;
+    color: var(--primary--on--secondary--bg);
+}
+
+.experienceExplanation {
+    font-size: 1.2rem;
+    color: var(--text--on--secondary--bg);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.experienceSubTitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary--on--secondary--bg);
+    margin-bottom: 0.5rem;
+}
+
+.listDetail {
+    list-style-type: disc;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-left: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .experienceBox {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .experienceHeader {
+        margin-bottom: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experienceTitle {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}

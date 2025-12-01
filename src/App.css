@@ -9,8 +9,8 @@
 }
 
 .dark {
-    --bg-color: #0f0f0f;
-    --bg--secondary: #0f0f0f;
+    --bg-color: #111111;
+    --bg--secondary: #111111;
     --text-color: #d4d4d4;
     --primary: #3269ff;
     --primary--on--secondary--bg: #3269ff;

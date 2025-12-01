@@ -14,7 +14,7 @@ export const translations = {
             alt: "Photo of Renzo Sahade",
         },
         about: {
-            me: "I’m Renzo Sahade, a Systems Analyst and Software Developer passionate about building solutions that create real impact — whether in backend, frontend, or full end-to-end projects.\n\nI’m currently studying Information Systems Engineering at the National Technological University (UTN), where I also earned my intermediate degree as a Systems Analyst. This background gave me a strong foundation in architecture, analysis, design patterns, and software engineering best practices.\n\nI have experience working with modern technologies such as Java Spring Boot, React, React Native, and Docker, with a strong interest in backend development, cloud computing, and cybersecurity. I’m continuously learning and always looking for new technical challenges.\n\nI am an intern at Banco Galicia, where I am part of a professional environment that motivates me to improve every day..\n\nBeyond coding, I’m motivated by growth, teamwork, and building scalable, clean, and well-designed software.",
+            me: "I’m Renzo Sahade, a Systems Analyst and Software Developer passionate about building solutions that create real impact — whether in backend, frontend, or full end-to-end projects.\n\nI’m currently studying Information Systems Engineering at the National Technological University (UTN), where I also earned my intermediate degree as a Systems Analyst. This background gave me a strong foundation in architecture, analysis, design patterns, and software engineering best practices.\n\nI have experience working with modern technologies such as Java Spring Boot, React, React Native, and Docker, with a strong interest in backend development, cloud computing, and cybersecurity. I’m continuously learning and always looking for new technical challenges.\n\nI am an intern at Banco Galicia, where I am part of a professional environment that motivates me to improve every day.\n\nBeyond coding, I’m motivated by growth, teamwork, and building scalable, clean, and well-designed software.",
             years: "+1",
             textYears: "Years of experience",
             languages: "ES/EN",
@@ -23,6 +23,29 @@ export const translations = {
             textSpecialitys: "Specialties",
             nextSkill: "Test Automation",
             textNextSkill: "Next skills to learn",
+        },
+        experience: {
+            title: "Work Experience",
+            lsgTitle: "Full Stack Developer – Freelance Project",
+            lsgTime: "Dec. 2024 - Feb. 2025",
+            lsgExplanation:
+                "LSG Distribution Company System. Development of a comprehensive solution for commercial and logistics management.",
+            lsgTaskRealized: "Tasks performed:",
+            lsgFirstPoint:
+                "Backend design and development (API, architecture, security)",
+            lsgSecondPoint:
+                "Implementation of web (React) and mobile (React Native) frontend",
+            lsgThirdPoint:
+                "Integration with external services (Firebase, auth, storage, notifications)",
+            lsgFourthPoint: "DevOps / Deploy",
+            lsgFifthPoint: "Project management and client collaboration",
+            lsgAchievementsTitle: "Key achievements:",
+            lsgAchievements: [
+                "Optimized system performance by reducing backend calls and improving overall app speed.",
+                "Implemented instant search through pre-loading and local data filtering.",
+                "Efficient rendering of large lists using server-side pagination and optimized components.",
+                "Improvements in frontend and backend architecture to increase scalability and keep the system agile.",
+            ],
         },
     },
     es: {
@@ -49,6 +72,29 @@ export const translations = {
             textSpecialitys: "Especialidades",
             nextSkill: "Tests Automatizados",
             textNextSkill: "Próximos skills a aprender",
+        },
+        experience: {
+            title: "Experiencia Laboral",
+            lsgTitle: "Desarrollador Full Stack – Proyecto Freelance",
+            lsgTime: "Dic. 2024 - Feb. 2025",
+            lsgExplanation:
+                "Sistema Empresarial Distribuidora LSG. Desarrollo de una solución integral para gestión comercial y logística.",
+            lsgTaskRealized: "Tareas realizadas:",
+            lsgFirstPoint:
+                "Diseño y desarrollo del backend (API, arquitectura, seguridad)",
+            lsgSecondPoint:
+                "Implementación del frontend web (React) y móvil (React Native)",
+            lsgThirdPoint:
+                "Integración con servicios externos (Firebase, auth, storage, notificaciones)",
+            lsgFourthPoint: "DevOps / Deploy",
+            lsgFifthPoint: "Gestión de proyecto y trabajo con el cliente",
+            lsgAchievementsTitle: "Logros clave:",
+            lsgAchievements: [
+                "Optimización del rendimiento del sistema reduciendo llamadas al backend y mejorando la velocidad general de la app.",
+                "Implementación de búsqueda instantánea mediante carga anticipada y filtrado local de datos.",
+                "Renderizado eficiente de grandes listas usando paginación server-side y componentes optimizados.",
+                "Mejoras en la arquitectura del frontend y backend para aumentar la escalabilidad y mantener el sistema ágil.",
+            ],
         },
     },
 } as const;
