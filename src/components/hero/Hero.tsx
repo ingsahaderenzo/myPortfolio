@@ -29,7 +29,7 @@ export default function Hero({ language }: { language: Language }) {
             {/* Photo */}
             <figure className={styles.photoWrapper}>
                 <img
-                    src="../../../public/assets/renzoSahade.jpg"
+                    src="/assets/renzoSahade.jpg"
                     alt={t.alt}
                     className={styles.photo}
                 />
