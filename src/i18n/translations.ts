@@ -1,5 +1,3 @@
-import Skills from "../components/skills/Skills";
-
 export const translations = {
     en: {
         nav: {
@@ -96,6 +94,11 @@ export const translations = {
                 "Agile methodologies (Scrum)",
             ],
         },
+        Contact: {
+            title: "Contact",
+            description:
+                "Have a project in mind? I’d love to chat about new opportunities.",
+        },
     },
     es: {
         nav: {
@@ -191,6 +194,11 @@ export const translations = {
                 "Atención al detalle",
                 "Metodologías ágiles (Scrum)",
             ],
+        },
+        Contact: {
+            title: "Contacto",
+            description:
+                "¿Tenés un proyecto en mente? Me encantaría hablar con vos sobre nuevas oportunidades.",
         },
     },
 } as const;

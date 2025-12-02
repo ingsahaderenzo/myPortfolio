@@ -6,6 +6,7 @@ import Hero from "./components/hero/Hero";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
 import Skills from "./components/skills/Skills";
+import Contact from "./components/contact/Contact";
 
 function App() {
     const [theme, setTheme] = useState("light");
@@ -32,6 +33,7 @@ function App() {
             <About language={language} />
             <Experience language={language} />
             <Skills language={language} />
+            <Contact language={language} />
         </div>
     );
 }
