@@ -1,3 +1,5 @@
+import Footer from "../components/footer/Footer";
+
 export const translations = {
     en: {
         nav: {
@@ -99,6 +101,10 @@ export const translations = {
             description:
                 "Have a project in mind? I’d love to chat about new opportunities.",
         },
+        Footer: {
+            copy: "© 2025 Renzo Sahade. All rights reserved.",
+            backToTop: "Back to top",
+        },
     },
     es: {
         nav: {
@@ -199,6 +205,10 @@ export const translations = {
             title: "Contacto",
             description:
                 "¿Tenés un proyecto en mente? Me encantaría hablar con vos sobre nuevas oportunidades.",
+        },
+        Footer: {
+            copy: "© 2025 Renzo Sahade. Todos los derechos reservados.",
+            backToTop: "Volver arriba",
         },
     },
 } as const;

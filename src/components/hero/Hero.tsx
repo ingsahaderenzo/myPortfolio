@@ -5,7 +5,7 @@ export default function Hero({ language }: { language: Language }) {
     const t = translations[language].hero;
 
     return (
-        <article className={styles.hero}>
+        <article className={styles.hero} id="hero">
             {/* Presentation */}
             <section className={styles.textBlock}>
                 <h1 className={styles.title}>

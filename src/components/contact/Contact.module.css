@@ -1,5 +1,6 @@
 .section {
     width: 100%;
+    min-height: 70vh;
     background-color: var(--bg-color);
     padding: 3rem;
     flex-direction: column;
@@ -18,7 +19,7 @@
 .contactDescription {
     font-size: 1.5rem;
     color: var(--text--on--secondary--bg);
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     text-align: center;
     max-width: 800px;
 }
