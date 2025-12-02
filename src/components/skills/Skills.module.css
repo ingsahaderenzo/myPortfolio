@@ -1,0 +1,98 @@
+.section {
+    width: 100%;
+    background-color: var(--bg--secondary);
+    padding: 3rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.sectionTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary--on--secondary--bg);
+    border-bottom: 0.3rem solid var(--primary--on--secondary--bg);
+    align-self: flex-start;
+}
+
+.techSkills {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.skillsContainer {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 30%;
+    min-width: 300px;
+}
+
+.skillsContainer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skillsContainer li {
+    background-color: transparent;
+    border: 2px solid var(--primary--on--secondary--bg);
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    font-size: 1.1rem;
+    color: var(--primary--on--secondary--bg);
+    cursor: default;
+    transition: 0.2s;
+    list-style-type: none;
+}
+
+.skillsContainer li:hover {
+    background-color: var(--primary--on--secondary--bg);
+    color: var(--bg--secondary);
+}
+
+.skillsTittle {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--text-color);
+}
+
+.softSkills {
+    margin-bottom: 3rem;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 1rem 1rem 1rem;
+    border: 2px solid var(--primary--on--secondary--bg);
+    border-radius: 14px;
+    transition: 0.3s;
+}
+
+.softSkills:hover {
+    box-shadow: 0 0 10px var(--primary--on--secondary--bg);
+    scale: 1.02;
+    transition: 0.3s;
+}
+
+.softSkills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem 2rem;
+}
+
+.softSkills li {
+    list-style: none;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.softSkills li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary--on--secondary--bg);
+}

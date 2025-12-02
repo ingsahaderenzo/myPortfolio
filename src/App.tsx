@@ -5,6 +5,7 @@ import type { Language } from "./i18n/translations";
 import Hero from "./components/hero/Hero";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
+import Skills from "./components/skills/Skills";
 
 function App() {
     const [theme, setTheme] = useState("light");
@@ -30,6 +31,7 @@ function App() {
             <Hero language={language} />
             <About language={language} />
             <Experience language={language} />
+            <Skills language={language} />
         </div>
     );
 }
