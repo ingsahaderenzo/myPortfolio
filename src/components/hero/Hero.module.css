@@ -36,6 +36,28 @@
     font-weight: 700;
 }
 
+.cvButton {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cvButton:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
 .photoWrapper {
     width: 24rem;
     border-radius: 15%;

@@ -16,6 +16,14 @@ export default function Hero({ language }: { language: Language }) {
                     {t.presentation}{" "}
                     <span className={styles.welcome}>{t.welcome}</span>
                 </p>
+
+                <a
+                    href="/assets/CV-Renzo-Sahade.pdf"
+                    download
+                    className={styles.cvButton}
+                >
+                    {t.cvButton}
+                </a>
             </section>
 
             {/* Photo */}
