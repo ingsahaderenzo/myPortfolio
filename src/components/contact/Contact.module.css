@@ -30,24 +30,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.contactListItem {
-    list-style: none;
-    margin-bottom: 2rem;
-    width: 20%;
-}
-
-.contactListItemTittle {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--text-color);
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    gap: 2rem;
 }
 
 .link {
     width: 100%;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,6 +46,22 @@
     border-radius: 14px;
     padding: 3rem;
     transition: all 0.3s ease;
+}
+
+.contactListItem {
+    list-style: none;
+    margin-bottom: 2rem;
+    flex: 1 1 250px;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+.contactListItemTittle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .icon {

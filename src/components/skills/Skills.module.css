@@ -23,6 +23,7 @@
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
+    gap: 2rem;
 }
 
 .skillsContainer {
@@ -30,13 +31,15 @@
     align-items: flex-start;
     flex-direction: column;
     width: 30%;
-    min-width: 300px;
+    min-width: 280px;
+    max-width: 400px;
 }
 
 .skillsContainer ul {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    width: 100%;
 }
 
 .skillsContainer li {
@@ -49,6 +52,7 @@
     cursor: default;
     transition: 0.2s;
     list-style-type: none;
+    white-space: nowrap;
 }
 
 .skillsContainer li:hover {
@@ -88,6 +92,9 @@
     list-style: none;
     position: relative;
     padding-left: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 .softSkills li::before {
@@ -95,4 +102,48 @@
     position: absolute;
     left: 0;
     color: var(--primary--on--secondary--bg);
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 2rem 1rem;
+    }
+
+    .techSkills {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .skillsContainer {
+        width: 100%;
+        max-width: 100%;
+        min-width: unset;
+    }
+
+    .sectionTitle {
+        font-size: 2.5rem;
+        align-self: center;
+    }
+
+    .skillsTittle {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .softSkills ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .skillsContainer li {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .softSkills ul {
+        gap: 0.8rem 1rem;
+    }
 }
